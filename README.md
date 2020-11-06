@@ -2,8 +2,11 @@
 # Documentazione della repository serverweb
 
 1.Utilizzare una macchina virtuale:Ubuntu 20-04 64 Bit
+
 2.Fare login con utente :adminuser e password:adminuser
+
 3.Inserire i seguenti comandi
+
 >sudo -i ; //per diventare amministratore
 >
 >apt install openssh-server
