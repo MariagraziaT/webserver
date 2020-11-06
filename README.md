@@ -25,7 +25,8 @@
 >
 > ethernets:
 >
->   enp0s3:
+>     enp0s3:
+>     
 >     addresses: [10.10.10.2/24]
 >
 >     gateway4: 10.10.10.1
