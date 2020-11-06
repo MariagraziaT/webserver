@@ -41,9 +41,9 @@
 >
 >netplan apply //solo nel caso in cui try non funzionasse
 >
->ip link set eth1 up
+>ip link set enp0s3 up
 >
->ip link set eth1 down
+>ip link set enp0s3 down
 
 5. Collegarsi alla macchina con modalità ssh da putty oppure continuare con la macchina
 
