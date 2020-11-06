@@ -12,7 +12,9 @@
 >apt install openssh-server
 >
 4.Definisci un ip statico per la tua macchina
+
 >nano /etc/netplan/00-installer-config.yaml
+
 >
 >
 >network:
@@ -24,7 +26,6 @@
 > ethernets:
 >
 >   enp0s3:
->
 >     addresses: [10.10.10.2/24]
 >
 >     gateway4: 10.10.10.1
