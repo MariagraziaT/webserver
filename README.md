@@ -34,7 +34,12 @@
 5. Collegarsi alla macchina con modalità ssh da putty oppure continuare con la macchina
 
 >apt install apache2
+>
 >apt install mc
+>
 >mcedit /etc/hosts
+>
 >mcedit /etc/hostname
+>
 >apt install net-tools
+>
