@@ -14,6 +14,7 @@
 4.Definisci un ip statico per la tua macchina
 >nano /etc/netplan/00-installer-config.yaml
 >
+>
 >network:
 >
 > version: 2
