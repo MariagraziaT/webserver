@@ -13,7 +13,7 @@
 >
 4.Definisci un ip statico per la tua macchina
 
->nano /etc/netplan/00-installer-config.yaml //modifico il file di configurazione
+>nano /etc/netplan/00-installer-config.yaml //modifica il file di configurazione
 
 >
 >
