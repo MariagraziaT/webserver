@@ -9,23 +9,25 @@
 >apt install openssh-server
 >
 4.Definisci un ip statico per la tua macchina
->nano /etc/netplan/
-
-netplan try o netplan apply
-
-network:
-  version: 2
-  renderer: networkd
-  ethernets:
-    eth1:
-      addresses: [10.10.10.2/24]
-      gateway4: 10.10.10.1
-      nameservers:
-          search: [mydomain, otherdomain]
-          addresses: [10.10.10.1, 1.1.1.1]
-ip link set eth1 up
-ip link set eth1 down
-ssh da putty
+>nano /etc/netplan/00-installer-config.yaml
+>
+>network:
+> version: 2
+> renderer: networkd
+> ethernets:
+>   enp0s3:
+>     addresses: [10.10.10.2/24]
+>     gateway4: 10.10.10.1
+>     nameservers:
+>         search: [mydomain, otherdomain]
+>         addresses: [10.10.10.1, 1.1.1.1]
+>
+>netplan try
+>netplan apply //solo nel caso in cui try non funzionasse
+>
+>ip link set eth1 up
+>ip link set eth1 down
+>ssh da putty
 
 apt install apache2
 apt install mc
