@@ -5,11 +5,11 @@
 2.Fare login con utente :adminuser e password:adminuser
 3.Inserire i seguenti comandi
 >sudo -i ; //per diventare amministratore
+>
 >apt install openssh-server
-
-fix ip
-
-nano /etc/netplan/
+>
+4.Definisci un ip statico per la tua macchina
+>nano /etc/netplan/
 
 netplan try o netplan apply
 
