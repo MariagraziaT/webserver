@@ -17,25 +17,25 @@
 
 >
 >
->network:
+>     network:
 >
-> version: 2
+>       version: 2
 >
-> renderer: networkd
+>       renderer: networkd
 >
-> ethernets:
+>       ethernets:
 >
->     enp0s3:
+>         enp0s3:
 >     
->     addresses: [10.10.10.2/24]
+>           addresses: [10.10.10.2/24]
 >
->     gateway4: 10.10.10.1
+>           gateway4: 10.10.10.1
 >
->     nameservers:
+>           nameservers:
 >
->         search: [mydomain, otherdomain]
+>               search: [mydomain, otherdomain]
 >
->         addresses: [10.10.10.1, 1.1.1.1]
+>               addresses: [10.10.10.1, 1.1.1.1]
 >
 >netplan try
 >
