@@ -107,22 +107,24 @@ Salva ed esci
 >
 >sudo nano 000-default1.conf
 >
-Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoA
+Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoB
 Esci
 >
 >systemctl reload apache2
 >
 >sudo a2ensite 001-default.conf
->cd /var/wwww/
->sudo mkdir SitoA
 >
->cd SitoA
+>cd /var/wwww/
+>
+>sudo mkdir SitoB
+>
+>cd SitoB
 >
 >sudo mkdir internet
 >
 >cd internet
 >
->nano siteA.html
+>nano siteB.html
 >
 >
 >
@@ -156,22 +158,22 @@ Salva ed esci
 >
 >sudo nano 000-default1.conf
 >
-Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoA
+Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoC
 Esci
 >
 >systemctl reload apache2
 >
 >sudo a2ensite 001-default.conf
 >cd /var/wwww/
->sudo mkdir SitoA
+>sudo mkdir SitoC
 >
->cd SitoA
+>cd SitoC
 >
 >sudo mkdir internet
 >
 >cd internet
 >
->nano siteA.html
+>nano siteC.html
 >
 >
 >       <!DOCTYPE html>
