@@ -47,13 +47,13 @@
 
 5. Collegarsi alla macchina con modalità ssh da putty oppure continuare con la macchina
 
->apt install apache2 //installa il server apache
+>sudo apt-get install apache2 //installa il server apache
 >
->apt install mc 
+>sudo apt install openssh-server
 >
->mcedit /etc/hosts
+6. Sito A:
+>cd /etc/apache2/sites-available
 >
->mcedit /etc/hostname
+>sudo cp 000-default.com 001-default.com
 >
->apt install net-tools
 >
