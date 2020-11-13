@@ -78,24 +78,24 @@ Esci
 >
 >
 >
-><!DOCTYPE html>
+>       <!DOCTYPE html>
 >
-><html>
+>       <html>
 >
-><head>
+>       <head>
 >
-><h1>Hi there!</h1>
+>       <h1>Hi there!</h1>
 >
-><h3>html da file</h3>
+>       <h3>html da file</h3>
 >
-></head>
+>       </head>
 >
-><body>
+>       <body>
 >
-><p> Hello world</p>
+>       <p> Hello world</p>
 >
-></body>
+>       </body>
 >
-></html>
+>       </html>
 >
 >
