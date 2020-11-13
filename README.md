@@ -59,12 +59,15 @@
 >sudo nano 000-default1.conf
 >
 Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoA
+
 Esci
 >
 >systemctl reload apache2
 >
 >sudo a2ensite 001-default.conf
+>
 >cd /var/wwww/
+>
 >sudo mkdir SitoA
 >
 >cd SitoA
@@ -74,9 +77,6 @@ Esci
 >cd internet
 >
 >nano siteA.html
->
->
->
 >
 >       <!DOCTYPE html>
 >
@@ -100,7 +100,9 @@ Esci
 >
 >
 Salva ed esci
+
 7. Site B
+
 >cd /etc/apache2/sites-available
 >
 >sudo cp 000-default.com 001-default.conf
@@ -108,6 +110,7 @@ Salva ed esci
 >sudo nano 000-default1.conf
 >
 Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoB
+
 Esci
 >
 >systemctl reload apache2
@@ -126,9 +129,6 @@ Esci
 >
 >nano siteB.html
 >
->
->
->
 >       <!DOCTYPE html>
 >
 >       <html>
@@ -151,7 +151,9 @@ Esci
 >
 >
 Salva ed esci
+
 8.Site C
+
 >cd /etc/apache2/sites-available
 >
 >sudo cp 000-default.com 001-default.conf
@@ -159,12 +161,15 @@ Salva ed esci
 >sudo nano 000-default1.conf
 >
 Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoC
+
 Esci
 >
 >systemctl reload apache2
 >
 >sudo a2ensite 001-default.conf
+>
 >cd /var/wwww/
+>
 >sudo mkdir SitoC
 >
 >cd SitoC
