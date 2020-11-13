@@ -54,6 +54,48 @@
 6. Sito A:
 >cd /etc/apache2/sites-available
 >
->sudo cp 000-default.com 001-default.com
+>sudo cp 000-default.com 001-default.conf
+>
+>sudo nano 000-default1.conf
+>
+Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoA
+Esci
+>
+>systemctl reload apache2
+>
+>sudo a2ensite 001-default.conf
+>cd /var/wwww/
+>sudo mkdir SitoA
+>
+>cd SitoA
+>
+>sudo mkdir internet
+>
+>cd internet
+>
+>nano siteA.html
+>
+>
+>
+>
+><!DOCTYPE html>
+>
+><html>
+>
+><head>
+>
+><h1>Hi there!</h1>
+>
+><h3>html da file</h3>
+>
+></head>
+>
+><body>
+>
+><p> Hello world</p>
+>
+></body>
+>
+></html>
 >
 >
