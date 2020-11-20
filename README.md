@@ -244,5 +244,19 @@ Esci
 >       local_root=/var/www/$USER
 >
 >       user_sub_token=$USER
-
-
+>
+>       allow_writeable_chroot=YES
+>
+>       secure_chroot_dir=/var/run/vsftpd/emty
+>
+>       pam_service_name=vsftpd
+>
+>       rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.key
+>
+>       ssl_enable=NO
+>
+>       session_support=YES
+>
+>       log_ftp_protocol=YES
+>
+>
