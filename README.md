@@ -204,7 +204,7 @@ Esci
 >
 9. Creare un utente per accesso unico alla cartella SitoA, SitoB e SitoC
 
->sudo userrad -s/bin/bash/ -d /var/www/SitoA -m usersitoX
+>sudo useradd -s/bin/bash/ -d /var/www/SitoA -m usersitoX
 >
 > sudo passwd usersitoX
 >
