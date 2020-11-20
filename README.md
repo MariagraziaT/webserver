@@ -202,4 +202,47 @@ Esci
 >       </html>
 >
 >
-Salva ed esci
+9. Creare un utente per accesso unico alla cartella SitoA, SitoB e SitoC
+
+>sudo userrad -s/bin/bash/ -d /var/www/SitoA -m usersitoX
+>
+> sudo passwd usersitoX
+>
+8.Configurare il file vsftp
+>
+>sudo nano /etc/vsftpd.conf
+>
+>
+>       listen=yes
+>
+>       listen_ipv6=NO
+>
+>       anonymous_enable=NO
+>
+>       local_enable=YES
+>
+>       write_enable=YES
+>
+>       local_umask=022
+>
+>       dirmessage_enable=YES
+>
+>       use_localtime=YES
+>
+>       xferlog_enable=YES
+>
+>       connect_from_port_20=YES
+>
+>       xferlog_file=/var/log/vsftpd.log
+>
+>       xferlog_std_format=YES
+>
+>       ftpd_banner=Welcome to our FTP service.
+>
+>       chroot_local_user=YES
+>
+>       local_root=/var/www/$USER
+>
+>       user_sub_token=$USER
+
+
