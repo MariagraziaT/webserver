@@ -27,15 +27,15 @@
 >
 >         enp0s3:
 >     
->           addresses: [10.10.10.2/24]  //inserire l'indirizzo che si vuole assegnare
+>           addresses: [172.16.29.109/16]  //inserire l'indirizzo che si vuole assegnare
 >
->           gateway4: 10.10.10.1 //inserire l'indirizzo di default gateway
+>           gateway4: 172.16.1.7 //inserire l'indirizzo di default gateway
 >
 >           nameservers:
 >
->               search: [mydomain, otherdomain] // proprio dominio e di un altro dominio
+>               search: [virtual.marconi] // proprio dominio e di un altro dominio
 >
->               addresses: [10.10.10.1, 1.1.1.1]  //indirizzo del proprio dominio e dell'altro dominio
+>               addresses: [172.16.1.18, 172.16.1.10]  //indirizzo del proprio dominio e dell'altro dominio
 >
 >netplan try //applica le modifiche sul file
 >
