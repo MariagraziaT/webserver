@@ -57,6 +57,8 @@ Indice:
 >
 >ip link set enp0s3 down
 
+## Installiamo dei pacchetti
+
 5. Collegarsi alla macchina con modalità ssh da putty oppure continuare con la macchina
 
 >sudo apt-get install apache2 //installa il server apache
