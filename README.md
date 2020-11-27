@@ -2,6 +2,7 @@
 # Documentazione della repository serverweb
 
 Indice:
+ - [Informazioni preliminari](#Informazioni-iniziali)<br>
  - [Installazione dei pacchetti necessari](#Installiamo-dei-pacchetti)<br> 
  - [Configurazione di rete](#Configuriamo-la-rete)<br>
  - [Creazione degli utenti](#Creiamo-gli-utenti)<br>
@@ -11,7 +12,7 @@ Indice:
  - [Crezione del sito](#Creiamo-il-sito)<br>
  - [Configurazione protocollo FTP](#Configuriamo-l'FTP)<br>
  
- ## Installiamo dei paccheti
+ ## Informazioni iniziali
 
 1.Utilizzare una macchina virtuale:Ubuntu 20-04 64 Bit
 
@@ -20,9 +21,19 @@ Indice:
 3.Inserire i seguenti comandi
 
 >sudo -i ; //per diventare amministratore
+
+## Installiamo dei pacchetti
+
+sudo apt update
 >
->apt install openssh-server //installa il server openssh
+>sudo apt-get install apache2
 >
+>sudo apt install openssh-server
+>
+>sudo apt-get install vsftpd
+
+## Configuriamo la rete
+
 4.Definisci un ip statico per la tua macchina
 
 >nano /etc/netplan/00-installer-config.yaml //modifica il file di configurazione
@@ -57,7 +68,7 @@ Indice:
 >
 >ip link set enp0s3 down
 
-## Installiamo dei pacchetti
+
 
 5. Collegarsi alla macchina con modalità ssh da putty oppure continuare con la macchina
 
