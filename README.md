@@ -2,7 +2,7 @@
 # Documentazione della repository serverweb
 
 Indice:
- - [Installazione dei pacchetti](#Installiamo-dei-pacchetti)<br> 
+ - [Installazione dei pacchetti necessari](#Installiamo-dei-pacchetti)<br> 
  - [Configurazione di rete](#Configuriamo-la-rete)<br>
  - [Creazione degli utenti](#Creiamo-gli-utenti)<br>
  - [Creazione dello spazio per gli utenti](#Creiamo-lo-spazio-di-lavoro-dei-siti)<br>
@@ -10,6 +10,8 @@ Indice:
  - [Creazione del file di configurazione per i siti](#creiamo-del-file-di-configurtazione-del-sito)<br>
  - [Crezione del sito](#Creiamo-il-sito)<br>
  - [Configurazione protocollo FTP](#Configuriamo-l'FTP)<br>
+ 
+ ##Installiamo dei paccheti
 
 1.Utilizzare una macchina virtuale:Ubuntu 20-04 64 Bit
 
