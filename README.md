@@ -11,7 +11,7 @@ Indice:
  - [Crezione del sito](#Creiamo-il-sito)<br>
  - [Configurazione protocollo FTP](#Configuriamo-l'FTP)<br>
  
- ##Installiamo dei paccheti
+ ## Installiamo dei paccheti
 
 1.Utilizzare una macchina virtuale:Ubuntu 20-04 64 Bit
 
