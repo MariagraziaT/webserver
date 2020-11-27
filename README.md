@@ -5,11 +5,14 @@ Indice:
  - [Informazioni preliminari](#Informazioni-iniziali)<br>
  - [Installazione dei pacchetti necessari](#Installiamo-dei-pacchetti)<br> 
  - [Configurazione di rete](#Configuriamo-la-rete)<br>
- - [Creazione degli utenti](#Creiamo-gli-utenti)<br>
- - [Creazione dello spazio per gli utenti](#Creiamo-lo-spazio-di-lavoro-dei-siti)<br>
  - [Controllare il file apache2](#Controlliamo-il-file-apache2)<br>
+ - [Creazione degli utenti](#Creiamo-gli-utenti)<br>
+ - [Creazione dello spazio per i siti](#Creiamo-lo-spazio-di-lavoro-dei-siti)<br>
  - [Creazione del file di configurazione per i siti](#creiamo-del-file-di-configurtazione-del-sito)<br>
  - [Crezione del sito](#Creiamo-il-sito)<br>
+ 
+
+
  - [Configurazione protocollo FTP](#Configuriamo-l'FTP)<br>
  
  ## Informazioni iniziali
@@ -24,7 +27,7 @@ Indice:
 
 ## Installiamo dei pacchetti
 
-sudo apt update
+>sudo apt update
 >
 >sudo apt-get install apache2
 >
@@ -34,7 +37,7 @@ sudo apt update
 
 ## Configuriamo la rete
 
-4.Definisci un ip statico per la tua macchina
+Definisci un ip statico per la tua macchina
 
 >nano /etc/netplan/00-installer-config.yaml //modifica il file di configurazione
 
@@ -68,166 +71,24 @@ sudo apt update
 >
 >ip link set enp0s3 down
 
+## Controlliamo il file apache2
 
+Controllare che vengano gestiti i file dentro apache2
 
-5. Collegarsi alla macchina con modalità ssh da putty oppure continuare con la macchina
+>cat cd /etc/apache2/apache2.conf
+>
 
->sudo apt-get install apache2 //installa il server apache
 >
->sudo apt install openssh-server
+>       <>Directory /var/www/>
+>            Options Indexes FollowSymLinks
+>            AllowOverride None
+>            Require all granted
+>       </Directory>
 >
-6. Sito A:
->cd /etc/apache2/sites-available
->
->sudo cp 000-default.com 001-default.conf
->
->sudo nano 000-default1.conf
->
-Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoA
 
-Esci
->
->systemctl reload apache2
->
->sudo a2ensite 001-default.conf
->
->cd /var/wwww/
->
->sudo mkdir SitoA
->
->cd SitoA
->
->sudo mkdir internet
->
->cd internet
->
->nano siteA.html
->
->       <!DOCTYPE html>
->
->       <html>
->
->       <head>
->
->       <h1>Hi there!</h1>
->
->       <h3>html da file</h3>
->
->       </head>
->
->       <body>
->
->       <p> Hello world</p>
->
->       </body>
->
->       </html>
->
->
-Salva ed esci
+## Creiamo gli utenti
 
-7. Site B
-
->cd /etc/apache2/sites-available
->
->sudo cp 000-default.com 001-default.conf
->
->sudo nano 000-default1.conf
->
-Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoB
-
-Esci
->
->systemctl reload apache2
->
->sudo a2ensite 001-default.conf
->
->cd /var/wwww/
->
->sudo mkdir SitoB
->
->cd SitoB
->
->sudo mkdir internet
->
->cd internet
->
->nano siteB.html
->
->       <!DOCTYPE html>
->
->       <html>
->
->       <head>
->
->       <h1>Hi there!</h1>
->
->       <h3>html da file</h3>
->
->       </head>
->
->       <body>
->
->       <p> Hello world</p>
->
->       </body>
->
->       </html>
->
->
-Salva ed esci
-
-8.Site C
-
->cd /etc/apache2/sites-available
->
->sudo cp 000-default.com 001-default.conf
->
->sudo nano 000-default1.conf
->
-Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoC
-
-Esci
->
->systemctl reload apache2
->
->sudo a2ensite 001-default.conf
->
->cd /var/wwww/
->
->sudo mkdir SitoC
->
->cd SitoC
->
->sudo mkdir internet
->
->cd internet
->
->nano siteC.html
->
->
->       <!DOCTYPE html>
->
->       <html>
->
->       <head>
->
->       <h1>Hi there!</h1>
->
->       <h3>html da file</h3>
->
->       </head>
->
->       <body>
->
->       <p> Hello world</p>
->
->       </body>
->
->       </html>
->
->
-9. Creare un utente per accesso unico alla cartella SitoA, SitoB e SitoC
+Creare un utente per accesso unico alla cartella SitoA, SitoB e SitoC
 
 >sudo useradd -s/bin/bash/ -d /var/www/SitoA -m usersitoX
 >
@@ -286,3 +147,122 @@ Esci
 >
 >
 Salva ed Esci
+
+## Creiamo il file di configutazione dei siti
+
+Creiamo il file di configurazione del Sito A,Sito B e Sito C (per l'esempio prendiamo il Sito X)
+>cd /etc/apache2/sites-available
+>
+>sudo cp 000-default.com 00x-default.conf //inserisci il numero al posto di x
+>
+>sudo nano 000-default1.conf
+>
+Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoX
+
+Esci
+>
+>systemctl reload apache2
+>
+>sudo a2ensite 00x-default.conf
+>
+
+## Creiamo lo spazio di lavoro dei siti
+
+Creiamo lo spazio di lavoro per i Sito A, Sito B, Sito C(per l'esempio prendiamo il Sito X)
+>cd /var/wwww/
+>
+>sudo mkdir SitoX
+>
+>cd Sitox
+>
+>sudo mkdir internet
+>
+>cd internet
+>
+>nano siteX.html
+>
+Riprendi ## esempio html
+
+## Esempio di html
+
+>       <!DOCTYPE html>
+>
+>       <html>
+>
+>       <head>
+>
+>       <h1>Hi there!</h1>
+>
+>       <h3>html da file</h3>
+>
+>       </head>
+>
+>       <body>
+>
+>       <p> Hello world</p>
+>
+>       </body>
+>
+>       </html>
+>
+>
+Salva ed esci
+
+2. Site B
+
+>cd /etc/apache2/sites-available
+>
+>sudo cp 000-default.com 001-default.conf
+>
+>sudo nano 000-default1.conf
+>
+Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoB
+
+Esci
+>
+>systemctl reload apache2
+>
+>sudo a2ensite 001-default.conf
+>
+>cd /var/wwww/
+>
+>sudo mkdir SitoB
+>
+>cd SitoB
+>
+>sudo mkdir internet
+>
+>cd internet
+>
+>nano siteB.html
+>
+
+3. Site C
+
+>cd /etc/apache2/sites-available
+>
+>sudo cp 000-default.com 001-default.conf
+>
+>sudo nano 000-default1.conf
+>
+Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoC
+
+Esci
+>
+>systemctl reload apache2
+>
+>sudo a2ensite 001-default.conf
+>
+>cd /var/wwww/
+>
+>sudo mkdir SitoC
+>
+>cd SitoC
+>
+>sudo mkdir internet
+>
+>cd internet
+>
+>nano siteC.html
+>
+>
