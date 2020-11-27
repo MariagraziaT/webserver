@@ -1,6 +1,17 @@
 
 # Documentazione della repository serverweb
 
+Indice:
+ - [Installazione dei pacchetti](#Installiamo dei pacchetti)<br> 
+ - [Configurazione di rete](#Configuriamo la rete)<br>
+ - [CREAZIONE UTENTI](#CREAZIONE-UTENTI)<br>
+ - [CREAZIONE SPAZIO SITI](#CREAZIONE-SPAZIO-SITI)<br>
+ - [CONTROLLO FILE APACHE2](#CONTROLLO-FILE-APACHE2)<br>
+ - [CREAZIONE FILE DI CONFIGURAZIONE DEL SITO](#CREAZIONE-FILE-DI-CONFIGURAZIONE-DEL-SITO)<br>
+ - [CREAZIONE SITO](#CREAZIONE-SITO)<br>
+ - [CONFIGURAZIONE FTP](#CONFIGURAZIONE-FTP)<br>
+ - [OPZIONALE: DHCP4 + WINDOWS](#OPZIONALE)<br>
+
 1.Utilizzare una macchina virtuale:Ubuntu 20-04 64 Bit
 
 2.Fare login con utente :adminuser e password:adminuser
