@@ -2,7 +2,7 @@
 # Documentazione della repository serverweb
 
 Indice:
- - [Installazione dei pacchetti](#Installiamo dei pacchetti)<br> 
+ - [Installazione dei pacchetti](#Installiamo-dei-pacchetti)<br> 
  - [Configurazione di rete](#Configuriamo la rete)<br>
  - [CREAZIONE UTENTI](#CREAZIONE-UTENTI)<br>
  - [CREAZIONE SPAZIO SITI](#CREAZIONE-SPAZIO-SITI)<br>
