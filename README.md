@@ -11,10 +11,6 @@ Indice:
  - [Creazione del file di configurazione per i siti](#Creiamo-il-file-di-configurazione-dei-siti)<br>
  - [Crezione del sito](#Esempio-di-sito)<br>
  
-
-
- - [Configurazione protocollo FTP](#Configuriamo-l'FTP)<br>
- 
  ## Informazioni iniziali
 
 1.Utilizzare una macchina virtuale:Ubuntu 20-04 64 Bit
