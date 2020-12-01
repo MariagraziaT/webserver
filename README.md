@@ -90,7 +90,7 @@ Creiamo un utente per accesso unico alla cartella SitoA, SitoB e SitoC (per l'es
 >
 > sudo passwd usersitoX
 >
-8.Configurare il file vsftp
+Configurare il file vsftp
 >
 >sudo nano /etc/vsftpd.conf
 >
@@ -161,7 +161,7 @@ Creiamo lo spazio di lavoro per i Sito A, Sito B, Sito C(per l'esempio prendiamo
 >
 >nano siteX.html
 >
-Riprendi "esempio html"
+Riprendi "esempio html :exclamation:"
 
 ## Creiamo il file di configurazione dei siti
 
