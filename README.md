@@ -8,7 +8,7 @@ Indice:
  - [Controllare il file apache2](#Controlliamo-il-file-apache2)<br>
  - [Creazione degli utenti](#Creiamo-gli-utenti)<br>
  - [Creazione dello spazio per i siti](#Creiamo-lo-spazio-di-lavoro-dei-siti)<br>
- - [Creazione del file di configurazione per i siti](#creiamo-del-file-di-configurtazione-del-sito)<br>
+ - [Creazione del file di configurazione per i siti](#Creiamo-il-file-di-configurazione-dei-siti)<br>
  - [Crezione del sito](#Esempio-di-sito)<br>
  
 
@@ -88,7 +88,7 @@ Controllare che vengano gestiti i file dentro apache2
 
 ## Creiamo gli utenti
 
-Creare un utente per accesso unico alla cartella SitoA, SitoB e SitoC
+Creiamo un utente per accesso unico alla cartella SitoA, SitoB e SitoC (per l'esempio prendiamo il Sito X)
 
 >sudo useradd -s/bin/bash/ -d /var/www/SitoX -m usersitoX
 >
@@ -148,24 +148,6 @@ Creare un utente per accesso unico alla cartella SitoA, SitoB e SitoC
 >
 Salva ed Esci
 
-## Creiamo il file di configutazione dei siti
-
-Creiamo il file di configurazione del Sito A,Sito B e Sito C (per l'esempio prendiamo il Sito X)
->cd /etc/apache2/sites-available
->
->sudo cp 000-default.com 00x-default.conf //inserisci il numero al posto di x
->
->sudo nano 000x-default1.conf
->
-Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoX/web
-
-Esci
->
->systemctl reload apache2
->
->sudo a2ensite 00x-default.conf
->
-
 ## Creiamo lo spazio di lavoro dei siti
 
 Creiamo lo spazio di lavoro per i Sito A, Sito B, Sito C(per l'esempio prendiamo il Sito X)
@@ -185,7 +167,26 @@ Creiamo lo spazio di lavoro per i Sito A, Sito B, Sito C(per l'esempio prendiamo
 >
 Riprendi "esempio html"
 
+## Creiamo il file di configurazione dei siti
+
+Creiamo il file di configurazione del Sito A,Sito B e Sito C (per l'esempio prendiamo il Sito X)
+>cd /etc/apache2/sites-available
+>
+>sudo cp 000-default.com 00x-default.conf //inserisci il numero al posto di x
+>
+>sudo nano 000x-default1.conf
+>
+Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoX/web
+
+Esci
+>
+>systemctl reload apache2
+>
+>sudo a2ensite 00x-default.conf
+>
+
 ## Esempio di html
+Esempio di Html da scrivere all'interno di /vae/www/SitoX/web
 
 >       <!DOCTYPE html>
 >
@@ -209,62 +210,3 @@ Riprendi "esempio html"
 >
 >
 Salva ed esci
-
-2. Site B
-
->cd /etc/apache2/sites-available
->
->sudo cp 000-default.com 001-default.conf
->
->sudo nano 000-default1.conf
->
-Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoB
-
-Esci
->
->systemctl reload apache2
->
->sudo a2ensite 001-default.conf
->
->cd /var/wwww/
->
->sudo mkdir SitoB
->
->cd SitoB
->
->sudo mkdir internet
->
->cd internet
->
->nano siteB.html
->
-
-3. Site C
-
->cd /etc/apache2/sites-available
->
->sudo cp 000-default.com 001-default.conf
->
->sudo nano 000-default1.conf
->
-Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoC
-
-Esci
->
->systemctl reload apache2
->
->sudo a2ensite 001-default.conf
->
->cd /var/wwww/
->
->sudo mkdir SitoC
->
->cd SitoC
->
->sudo mkdir internet
->
->cd internet
->
->nano siteC.html
->
->
