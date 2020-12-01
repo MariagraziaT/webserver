@@ -9,7 +9,7 @@ Indice:
  - [Creazione degli utenti](#Creiamo-gli-utenti)<br>
  - [Creazione dello spazio per i siti](#Creiamo-lo-spazio-di-lavoro-dei-siti)<br>
  - [Creazione del file di configurazione per i siti](#creiamo-del-file-di-configurtazione-del-sito)<br>
- - [Crezione del sito](#Creiamo-il-sito)<br>
+ - [Crezione del sito](#Esempio-di-sito)<br>
  
 
 
@@ -90,7 +90,7 @@ Controllare che vengano gestiti i file dentro apache2
 
 Creare un utente per accesso unico alla cartella SitoA, SitoB e SitoC
 
->sudo useradd -s/bin/bash/ -d /var/www/SitoA -m usersitoX
+>sudo useradd -s/bin/bash/ -d /var/www/SitoX -m usersitoX
 >
 > sudo passwd usersitoX
 >
@@ -155,9 +155,9 @@ Creiamo il file di configurazione del Sito A,Sito B e Sito C (per l'esempio pren
 >
 >sudo cp 000-default.com 00x-default.conf //inserisci il numero al posto di x
 >
->sudo nano 000-default1.conf
+>sudo nano 000x-default1.conf
 >
-Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoX
+Vai su DocumentRoot /var/wwww/html e sostituisci /var/wwww/SitoX/web
 
 Esci
 >
@@ -175,13 +175,15 @@ Creiamo lo spazio di lavoro per i Sito A, Sito B, Sito C(per l'esempio prendiamo
 >
 >cd Sitox
 >
->sudo mkdir internet
+>sudo mkdir log
 >
->cd internet
+>sudo mkdir web
+>
+>cd web
 >
 >nano siteX.html
 >
-Riprendi ## esempio html
+Riprendi "esempio html"
 
 ## Esempio di html
 
