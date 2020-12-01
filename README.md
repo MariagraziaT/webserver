@@ -181,7 +181,7 @@ Esci
 >sudo a2ensite 00x-default.conf
 >
 
-## Esempio di html :exclamation:
+## :exclamation: Esempio di html 
 Esempio di Html da scrivere all'interno di /vae/www/SitoX/web
 
 >       <!DOCTYPE html>
