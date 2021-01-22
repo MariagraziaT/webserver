@@ -10,8 +10,7 @@ Indice:
  - [Creazione dello spazio per i siti](#Creiamo-lo-spazio-di-lavoro-dei-siti)<br>
  - [Creazione del file di configurazione per i siti](#Creiamo-il-file-di-configurazione-dei-siti)<br>
  - [Crezione del sito](#Esempio-di-html)  <br>
- - [Installazione di Samba](#Installiamo-Samba)
-  :woman_dancing:
+ - [Installazione di Samba](#Installiamo-Samba-:woman_dancing:)
  
  ## Informazioni iniziali
 
