@@ -182,7 +182,8 @@ Esci
 >sudo a2ensite 00x-default.conf
 >
 
-## :exclamation: Esempio di html 
+ :exclamation:
+## Esempio di html 
 Esempio di Html da scrivere all'interno di /vae/www/SitoX/web
 
 >       <!DOCTYPE html>
@@ -210,6 +211,7 @@ Salva ed esci
 
 ## Installiamo Samba 
 :woman_dancing:
+
 Prima di installare samba, aggiornare la propria macchina
 >sudo apt-get update
 
