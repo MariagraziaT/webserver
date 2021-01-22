@@ -9,8 +9,8 @@ Indice:
  - [Creazione degli utenti](#Creiamo-gli-utenti)<br>
  - [Creazione dello spazio per i siti](#Creiamo-lo-spazio-di-lavoro-dei-siti)<br>
  - [Creazione del file di configurazione per i siti](#Creiamo-il-file-di-configurazione-dei-siti)<br>
- - [Crezione del sito](#Esempio-di-html)  <br>
- - [Installazione di Samba](#Installiamo-Samba-:woman_dancing:)
+ - [Crezione del sito](#Esempio-di-html) :exclametion:  <br>
+ - [Installazione di Samba](#Installiamo-Samba):woman_dancing:
  
  ## Informazioni iniziali
 
@@ -209,7 +209,7 @@ Esempio di Html da scrivere all'interno di /vae/www/SitoX/web
 >
 Salva ed esci
 
-## Installiamo Samba  :woman_dancing:
+## Installiamo Samba 
 
 Prima di installare samba, aggiornare la propria macchina
 >sudo apt-get update
