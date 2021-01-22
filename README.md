@@ -206,3 +206,12 @@ Esempio di Html da scrivere all'interno di /vae/www/SitoX/web
 >
 >
 Salva ed esci
+
+## Installazione di samba
+
+Prima di installare samba, aggiornare la propria macchina
+>sudo apt-get update
+
+Successivamente, si passa all'installazione di samba
+>sudo apt-get install samba
+>
