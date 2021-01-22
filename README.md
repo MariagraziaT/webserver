@@ -184,8 +184,7 @@ Esci
 >
 
 
-## Esempio di html 
-:exclamation: 
+## Esempio di html
 Esempio di Html da scrivere all'interno di /vae/www/SitoX/web
 
 >       <!DOCTYPE html>
@@ -211,7 +210,7 @@ Esempio di Html da scrivere all'interno di /vae/www/SitoX/web
 >
 Salva ed esci
 
-## Installiamo Samba :woman_dancing:
+## Installiamo Samba
 
 Prima di installare samba, aggiornare la propria macchina
 >sudo apt-get update
