@@ -184,7 +184,8 @@ Esci
 >
 
 
-## Esempio di html :exclamation: 
+## Esempio di html 
+:exclamation: 
 Esempio di Html da scrivere all'interno di /vae/www/SitoX/web
 
 >       <!DOCTYPE html>
