@@ -217,3 +217,5 @@ Prima di installare samba, aggiornare la propria macchina
 Successivamente, si passa all'installazione di samba
 >sudo apt-get install samba
 >
+
+https://wiki.ubuntu-it.org/Server/Samba#Installazione
