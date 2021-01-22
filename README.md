@@ -208,7 +208,7 @@ Esempio di Html da scrivere all'interno di /vae/www/SitoX/web
 >
 Salva ed esci
 
-## Installazione di samba :woman_dancing:
+## Installiamo Samba :woman_dancing:
 
 Prima di installare samba, aggiornare la propria macchina
 >sudo apt-get update
