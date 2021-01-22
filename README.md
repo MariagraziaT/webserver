@@ -211,7 +211,6 @@ Salva ed esci
 
 ## Installiamo Samba :woman_dancing:
 
-
 Prima di installare samba, aggiornare la propria macchina
 >sudo apt-get update
 
